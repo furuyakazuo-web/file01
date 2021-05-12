@@ -1,0 +1,24 @@
+.top {
+    background-image: url(../image/top-mv_sp.png);
+    background-position: center;
+    background-size: cover;
+    height: 674px;
+    position: relative;
+    margin-top: 100px;
+    @include overTab {
+        background-image: url(../image/top-bg.png);
+    }
+    .top-title {
+        color: cl(white);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        text-align: center;
+        font-size: 35px;
+        width: 100%;
+        @include overTab {
+            font-size: 50px;
+        }
+    }
+}
